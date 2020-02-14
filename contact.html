@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/portfolio.css" />
+    <title>Portfolio</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="/js/my.js"></script>
+  </head>
+  <body>
+
+    <nav id="overlay">
+        <img
+          class="close"
+          src="./assets/images/close-white.svg"
+          id="close"
+          alt="close logo"
+        />
+        <ul>
+            <li>
+                <a href="index.html">home</a>
+                <span>lets go back home</span>
+            </li>
+            <li>
+                <a href="portfolio.html">portfolio</a>
+                <span>check out some of my work</span>
+            </li>
+            <li>
+                <a href="contact.html">contact</a>
+                <span>say hello</span>
+            </li>
+            <li>
+                <a href="#">about me</a>
+                <span>a little bit about myself</span>
+            </li>
+        </ul>
+    </nav>
+
+    <header>
+        <img
+        class="menu"
+        src="./assets/images/menu-black.svg"
+        id="menu"
+        alt="menu logo"
+        />
+    </header>
+
+    <main>
+        <form action="" method="POST" enctype="multipart/form-data">
+            <input name="action" value="submit" type="hidden"> Your name:<br>
+            <input name="name" size="30" type="text"><br> Your email:<br>
+            <input name="email" size="30" type="text"><br> Your message:<br>
+            <textarea name="message" rows="7" cols="30">
+            </textarea><br>
+            <input value="Send email" type="submit">
+            </form>
+    </main>
+
+    <script src="portfolio.js"></script>
+  </body>
+</html>

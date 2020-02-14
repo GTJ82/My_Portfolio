@@ -1,0 +1,139 @@
+body,
+html {
+  font-family: "Montserrat";
+  margin: 0;
+  
+  a {
+    text-decoration: none;
+  }
+  
+}
+
+body {
+    background-image: url(../assets/images/BG1.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+   
+}
+
+header {
+  padding: 2em;
+
+  .menu {
+    float: right;
+    width: 20px;
+    cursor: pointer;
+  }
+  
+}
+
+section {
+  
+  
+
+  h1 {
+    font-size: 4em;
+    margin: 1em auto;
+    width: 70%;
+  }
+
+  
+}
+
+nav {
+  position: absolute;
+  background-image: linear-gradient(to right top, #133aeb, #1b53ef, #3169f1, #497df0, #6390ed, #5c9ded, #5fa9eb, #6bb4e7, #5ebbe2, #5cc1d9, #64c5ce, #73c9c3);
+  padding: 2em;
+  width: calc(100% - 4em);
+  height: calc(100vh - 4em);
+  display: none;
+  transform: scaleX(0);
+  transform-origin: right;
+
+  .close {
+    width: 20px;
+    float: right;
+    cursor: pointer;
+    opacity: 0;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 10% auto 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    width: 80%;
+  }
+
+  li {
+      opacity: 0;
+  }
+
+  a {
+      color: white;
+      font-weight: bold;
+      font-size: 1.75em;
+  }
+
+  span {
+      color: #71757a;
+      display: block;
+      font-size: 1em;
+      margin-top: 20px;
+  }
+}
+
+.show-menu {
+    display: block;
+    animation: menu-slide 1s ease-in forwards;
+
+    .close{
+        animation: show-close 1s 1s forwards;
+    }
+
+    li:nth-of-type(1) {
+        animation: menu-item-slide .6s forwards 1s ease-in-out;
+    }
+    li:nth-of-type(2) {
+        animation: menu-item-slide .6s forwards 1.2s ease-in-out;
+    }
+    li:nth-of-type(3) {
+        animation: menu-item-slide .6s forwards 1.4s ease-in-out;
+    }
+    li:nth-of-type(4) {
+        animation: menu-item-slide .6s forwards 1.6s ease-in-out;
+    }
+}
+
+@keyframes menu-slide {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes show-close {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes menu-item-slide {
+    from {
+        transform: translateY(70%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
