@@ -25,6 +25,7 @@ body {
     #73c9c3
   );
 }
+
 header {
   padding: 2em;
 
@@ -57,8 +58,6 @@ main {
       display: inline-block;
       opacity: 0.8;
       transition: 1s ease;
-      
-      
     }
 
     img:hover {
@@ -67,7 +66,6 @@ main {
       -ms-transform: scale(1.1);
       transform: scale(1.1);
       transition: 1s ease;
-      
     }
 
     .info {
@@ -75,123 +73,120 @@ main {
       text-align: center;
 
       p {
-          margin-right: 2em;
-          margin-left: 2em;
+        margin-right: 2em;
+        margin-left: 2em;
       }
     }
   }
 }
 
-  /*--------Navbar Overlay------*/
+/*--------Navbar Overlay------*/
 
-  nav {
-    position: absolute;
-    background-image: linear-gradient(
-      to right top,
-      #133aeb,
-      #1b53ef,
-      #3169f1,
-      #497df0,
-      #6390ed,
-      #5c9ded,
-      #5fa9eb,
-      #6bb4e7,
-      #5ebbe2,
-      #5cc1d9,
-      #64c5ce,
-      #73c9c3
-    );
-    padding: 2em;
-    width: calc(100% - 4em);
-    height: calc(100vh - 4em);
-    display: none;
-    transform: scaleX(0);
-    transform-origin: right;
+nav {
+  position: absolute;
+  background-image: linear-gradient(
+    to right top,
+    #133aeb,
+    #1b53ef,
+    #3169f1,
+    #497df0,
+    #6390ed,
+    #5c9ded,
+    #5fa9eb,
+    #6bb4e7,
+    #5ebbe2,
+    #5cc1d9,
+    #64c5ce,
+    #73c9c3
+  );
+  padding: 2em;
+  width: calc(100% - 4em);
+  height: calc(100vh - 4em);
+  display: none;
+  transform: scaleX(0);
+  transform-origin: right;
 
-    .close {
-      width: 20px;
-      float: right;
-      cursor: pointer;
-      opacity: 0;
-    }
-
-    ul {
-      list-style-type: none;
-      margin: 10% auto 0 auto;
-      padding: 0;
-      display: grid;
-      grid-template-columns: repeat(4, 25%);
-      width: 80%;
-    }
-
-    li {
-      opacity: 0;
-    }
-
-    a {
-      color: white;
-      font-weight: bold;
-      font-size: 1.75em;
-    }
-
-    span {
-      color: #71757a;
-      display: block;
-      font-size: 1em;
-      margin-top: 20px;
-    }
+  .close {
+    width: 20px;
+    float: right;
+    cursor: pointer;
+    opacity: 0;
   }
 
-  .show-menu {
+  ul {
+    list-style-type: none;
+    margin: 10% auto 0 auto;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    width: 80%;
+  }
+
+  li {
+    opacity: 0;
+  }
+
+  a {
+    color: white;
+    font-weight: bold;
+    font-size: 1.75em;
+  }
+
+  span {
+    color: #71757a;
     display: block;
-    animation: menu-slide 1s ease-in forwards;
+    font-size: 1em;
+    margin-top: 20px;
+  }
+}
 
-    
-    .close {
-      animation: show-close 1s 1s forwards;
-    }
+.show-menu {
+  display: block;
+  animation: menu-slide 1s ease-in forwards;
 
-    li:nth-of-type(1) {
-      animation: menu-item-slide 0.6s forwards 1s ease-in-out;
-    }
-    li:nth-of-type(2) {
-      animation: menu-item-slide 0.6s forwards 1.2s ease-in-out;
-    }
-    li:nth-of-type(3) {
-      animation: menu-item-slide 0.6s forwards 1.4s ease-in-out;
-    }
-    li:nth-of-type(4) {
-      animation: menu-item-slide 0.6s forwards 1.6s ease-in-out;
-    }
+  .close {
+    animation: show-close 1s 1s forwards;
   }
 
-  @keyframes menu-slide {
-    from {
-      transform: scaleX(0);
-    }
-    to {
-      transform: scaleX(1);
-    }
+  li:nth-of-type(1) {
+    animation: menu-item-slide 0.6s forwards 1s ease-in-out;
   }
-
-  @keyframes show-close {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+  li:nth-of-type(2) {
+    animation: menu-item-slide 0.6s forwards 1.2s ease-in-out;
   }
-
-  @keyframes menu-item-slide {
-    from {
-      transform: translateY(70%);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-    
+  li:nth-of-type(3) {
+    animation: menu-item-slide 0.6s forwards 1.4s ease-in-out;
   }
+  li:nth-of-type(4) {
+    animation: menu-item-slide 0.6s forwards 1.6s ease-in-out;
+  }
+}
 
+@keyframes menu-slide {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
+@keyframes show-close {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes menu-item-slide {
+  from {
+    transform: translateY(70%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
