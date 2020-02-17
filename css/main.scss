@@ -13,6 +13,7 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   height: 100vh;
+  width: 100vw;
 }
 
 header {
@@ -38,35 +39,37 @@ section {
   position: absolute;
   bottom: 0;
 
-  .outline{
-      position: relative;
-      z-index: -1;
-      right: 80px;
-      
+  .outline {
+    position: relative;
+    z-index: -1;
+    right: 80px;
   }
 
   .linkedin {
     position: relative;
+    z-index: 0;
     left: 280px;
     bottom: 5px;
   }
   .github {
     position: relative;
+    z-index: 0;
     left: 285px;
     bottom: 5px;
   }
   .resume {
     position: relative;
+    z-index: 0;
     left: 295px;
-    bottom: 5px; 
+    bottom: 5px;
   }
- 
 }
 
 /*-------Nav-Overlay-------*/
 
 nav {
   position: absolute;
+  z-index: 1;
   background-image: linear-gradient(
     to right top,
     #133aeb,
@@ -173,3 +176,58 @@ nav {
     opacity: 1;
   }
 }
+
+.hide-footer {
+  
+    display: none;
+  
+}
+
+/*------Responsive style-------*/
+
+@media screen and (max-width: 375px) {
+
+    header {
+      
+      .menu {
+        float: right;
+        width: 30px;
+        cursor: pointer;
+      }
+    }
+  
+    section {
+      margin-top: 50px;
+      h1 {
+        font-size: 3.5em;
+        margin-left: 30px;
+        width: calc(100% - 30px);
+      }
+    }
+  
+    .bottom {
+        overflow: hidden;
+        width: 100vw;
+        
+        .outline {
+          
+        }
+      
+        .linkedin {
+          
+          left: 10px;
+         
+        }
+        .github {
+         
+          left: 15px;
+          
+        }
+        .resume {
+          
+          left: 20px;
+          
+        }
+      }
+}
+
