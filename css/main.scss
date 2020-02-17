@@ -12,9 +12,7 @@ body {
   background-image: url(../assets/images/BG1.svg);
   background-size: cover;
   background-repeat: no-repeat;
-  position: relative;
   height: 100vh;
-  
 }
 
 header {
@@ -22,7 +20,7 @@ header {
 
   .menu {
     float: right;
-    width: 20px;
+    width: 30px;
     cursor: pointer;
   }
 }
@@ -30,7 +28,7 @@ header {
 section {
   h1 {
     font-size: 4em;
-    margin-left: 500px;
+    margin-left: 230px;
     width: 70%;
   }
 }
@@ -39,11 +37,30 @@ section {
   margin: 0 auto;
   position: absolute;
   bottom: 0;
-  top: 300px;
 
-  .gihub {
-    float: right;
+  .outline{
+      position: relative;
+      z-index: -1;
+      right: 80px;
+      
   }
+
+  .linkedin {
+    position: relative;
+    left: 280px;
+    bottom: 5px;
+  }
+  .github {
+    position: relative;
+    left: 285px;
+    bottom: 5px;
+  }
+  .resume {
+    position: relative;
+    left: 295px;
+    bottom: 5px; 
+  }
+ 
 }
 
 /*-------Nav-Overlay-------*/

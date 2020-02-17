@@ -22,16 +22,47 @@ header {
 
 header .menu {
   float: right;
-  width: 20px;
+  width: 30px;
   cursor: pointer;
 }
 
 section h1 {
   font-size: 4em;
-  margin: 1em auto;
+  margin-left: 230px;
   width: 70%;
 }
 
+.bottom {
+  margin: 0 auto;
+  position: absolute;
+  bottom: 0;
+}
+
+.bottom .outline {
+  position: relative;
+  z-index: -1;
+  right: 80px;
+}
+
+.bottom .linkedin {
+  position: relative;
+  left: 280px;
+  bottom: 5px;
+}
+
+.bottom .github {
+  position: relative;
+  left: 285px;
+  bottom: 5px;
+}
+
+.bottom .resume {
+  position: relative;
+  left: 295px;
+  bottom: 5px;
+}
+
+/*-------Nav-Overlay-------*/
 nav {
   position: absolute;
   background-image: -webkit-gradient(linear, left bottom, right top, from(#133aeb), color-stop(#1b53ef), color-stop(#3169f1), color-stop(#497df0), color-stop(#6390ed), color-stop(#5c9ded), color-stop(#5fa9eb), color-stop(#6bb4e7), color-stop(#5ebbe2), color-stop(#5cc1d9), color-stop(#64c5ce), to(#73c9c3));
@@ -93,23 +124,23 @@ nav span {
 }
 
 .show-menu li:nth-of-type(1) {
-  -webkit-animation: menu-item-slide .6s forwards 1s ease-in-out;
-          animation: menu-item-slide .6s forwards 1s ease-in-out;
+  -webkit-animation: menu-item-slide 0.6s forwards 1s ease-in-out;
+          animation: menu-item-slide 0.6s forwards 1s ease-in-out;
 }
 
 .show-menu li:nth-of-type(2) {
-  -webkit-animation: menu-item-slide .6s forwards 1.2s ease-in-out;
-          animation: menu-item-slide .6s forwards 1.2s ease-in-out;
+  -webkit-animation: menu-item-slide 0.6s forwards 1.2s ease-in-out;
+          animation: menu-item-slide 0.6s forwards 1.2s ease-in-out;
 }
 
 .show-menu li:nth-of-type(3) {
-  -webkit-animation: menu-item-slide .6s forwards 1.4s ease-in-out;
-          animation: menu-item-slide .6s forwards 1.4s ease-in-out;
+  -webkit-animation: menu-item-slide 0.6s forwards 1.4s ease-in-out;
+          animation: menu-item-slide 0.6s forwards 1.4s ease-in-out;
 }
 
 .show-menu li:nth-of-type(4) {
-  -webkit-animation: menu-item-slide .6s forwards 1.6s ease-in-out;
-          animation: menu-item-slide .6s forwards 1.6s ease-in-out;
+  -webkit-animation: menu-item-slide 0.6s forwards 1.6s ease-in-out;
+          animation: menu-item-slide 0.6s forwards 1.6s ease-in-out;
 }
 
 @-webkit-keyframes menu-slide {
