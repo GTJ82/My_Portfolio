@@ -219,7 +219,43 @@ nav span {
 }
 
 /*------Responsive style-------*/
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 767.98px) {
+  nav {
+    margin: 5px auto;
+    padding: 5px auto;
+  }
+  nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 30% auto 0 auto;
+    padding: 0;
+    width: 80%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  nav li {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 5px 10px 5px 10px;
+  }
+  nav a {
+    color: white;
+    font-weight: bold;
+    font-size: 1.25em;
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  nav span {
+    color: #71757a;
+    padding: 5px;
+    font-size: 15px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
   header .menu {
     float: right;
     width: 30px;
@@ -239,12 +275,15 @@ nav span {
   }
   .bottom .linkedin {
     left: 10px;
+    top: 240px;
   }
   .bottom .github {
     left: 15px;
+    top: 240px;
   }
   .bottom .resume {
     left: 20px;
+    top: 240px;
   }
 }
 /*# sourceMappingURL=main.css.map */
