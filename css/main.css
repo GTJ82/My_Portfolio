@@ -242,24 +242,16 @@ nav span {
     margin: 5px 10px 5px 10px;
   }
   nav a {
-    color: white;
-    font-weight: bold;
     font-size: 1.25em;
     margin-right: 20px;
     margin-left: 20px;
   }
   nav span {
-    color: #71757a;
     padding: 5px;
     font-size: 15px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  header .menu {
-    float: right;
-    width: 30px;
-    cursor: pointer;
   }
   section {
     margin-top: 50px;
