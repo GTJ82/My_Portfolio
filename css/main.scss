@@ -34,6 +34,8 @@ section {
   }
 }
 
+
+
 .bottom {
   margin: 0 auto;
   position: absolute;
@@ -202,26 +204,15 @@ nav {
     }
 
     a {
-      color: white;
-      font-weight: bold;
       font-size: 1.25em;
       margin-right: 20px;
       margin-left: 20px;
     }
 
     span {
-      color: #71757a;
       padding: 5px;
       font-size: 15px;
       justify-content: center;
-    }
-  }
-
-  header {
-    .menu {
-      float: right;
-      width: 30px;
-      cursor: pointer;
     }
   }
 
@@ -238,9 +229,6 @@ nav {
     overflow: hidden;
     width: 100vw;
 
-    .outline {
-    }
-
     .linkedin {
       left: 10px;
       top: 240px;
@@ -255,3 +243,6 @@ nav {
     }
   }
 }
+
+
+

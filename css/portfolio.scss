@@ -80,6 +80,12 @@ main {
       transition: 1s ease;
     }
 
+    .githubLink {
+      width: 40px;
+      height: 40px;
+      border: none;
+    }
+
     .info {
       display: inline-block;
       text-align: center;
@@ -91,5 +97,7 @@ main {
     }
   }
 }
+
+
 
 
