@@ -1,0 +1,31 @@
+body,
+html {
+  font-family: "Montserrat";
+  height: 100%;
+}
+
+body a,
+html a {
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#133aeb), color-stop(#1b53ef), color-stop(#3169f1), color-stop(#497df0), color-stop(#6390ed), color-stop(#5c9ded), color-stop(#5fa9eb), color-stop(#6bb4e7), color-stop(#5ebbe2), color-stop(#5cc1d9), color-stop(#64c5ce), to(#73c9c3));
+  background-image: linear-gradient(to right top, #133aeb, #1b53ef, #3169f1, #497df0, #6390ed, #5c9ded, #5fa9eb, #6bb4e7, #5ebbe2, #5cc1d9, #64c5ce, #73c9c3);
+}
+
+header {
+  display: inline;
+  padding: 2em;
+}
+
+header a {
+  float: right;
+  color: white;
+  font-weight: bold;
+  font-size: 1.75em;
+  margin-top: 10px;
+  margin-right: 40px;
+}
+/*# sourceMappingURL=aboutme.css.map */

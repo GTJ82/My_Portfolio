@@ -1,0 +1,44 @@
+body,
+html {
+  font-family: "Montserrat";
+  height: 100%;
+
+  a {
+    text-decoration: none;
+  }
+
+}
+
+body {
+    margin: 0;
+    background-image: linear-gradient(
+      to right top,
+      #133aeb,
+      #1b53ef,
+      #3169f1,
+      #497df0,
+      #6390ed,
+      #5c9ded,
+      #5fa9eb,
+      #6bb4e7,
+      #5ebbe2,
+      #5cc1d9,
+      #64c5ce,
+      #73c9c3
+    );
+  }
+
+  header {
+    display: inline;
+    padding: 2em;
+  
+    a {
+      float: right;
+      color: white;
+      font-weight: bold;
+      font-size: 1.75em;
+      margin-top: 10px;
+      margin-right: 40px;
+    }
+  
+  }

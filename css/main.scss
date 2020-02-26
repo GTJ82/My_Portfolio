@@ -108,6 +108,7 @@ nav {
     display: grid;
     grid-template-columns: repeat(4, 25%);
     width: 80%;
+    align-items: center;
   }
 
   li {
