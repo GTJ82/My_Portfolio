@@ -32,14 +32,10 @@ header a {
 main {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 60% 40%;
-      grid-template-columns: 60% 40%;
 }
 
-main p {
-  padding-left: 150px;
+main img {
   padding-top: 100px;
-  font-size: large;
-  line-height: 1.5;
+  padding-left: 100px;
 }
 /*# sourceMappingURL=aboutme.css.map */

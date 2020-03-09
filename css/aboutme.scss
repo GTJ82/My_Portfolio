@@ -46,12 +46,12 @@ body {
 
   main {
       display: grid;
-      grid-template-columns: 60% 40%;
-     
-      p {
-          padding-left: 150px;
+    
+
+      img {
           padding-top: 100px;
-          font-size: large;
-          line-height: 1.5;
+          padding-left: 100px;
       }
+     
+      
   }
