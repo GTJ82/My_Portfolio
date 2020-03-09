@@ -28,4 +28,17 @@ header a {
   margin-top: 10px;
   margin-right: 40px;
 }
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60% 40%;
+      grid-template-columns: 60% 40%;
+}
+
+main p {
+  padding-left: 150px;
+  padding-top: 100px;
+  font-size: large;
+}
 /*# sourceMappingURL=aboutme.css.map */

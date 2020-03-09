@@ -25,7 +25,8 @@ body {
       #5cc1d9,
       #64c5ce,
       #73c9c3
-    );
+    )
+
   }
 
   header {
@@ -41,4 +42,15 @@ body {
       margin-right: 40px;
     }
   
+  }
+
+  main {
+      display: grid;
+      grid-template-columns: 60% 40%;
+     
+      p {
+          padding-left: 150px;
+          padding-top: 100px;
+          font-size: large;
+      }
   }
