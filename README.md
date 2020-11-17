@@ -10,12 +10,13 @@ This a site I built to display my personal projects and a little about myself. Y
 
 ### Technology used
 
--GitHub
--Visual Studio Code
--HTML
--CSS
--Javascript
--Sass
+* GitHub
+* Visual Studio Code
+* HTML
+* CSS
+* Javascript
+* Sass
+* Adobe XD
 
 
 ## Authors
