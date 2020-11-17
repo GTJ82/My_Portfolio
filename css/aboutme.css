@@ -29,12 +29,7 @@ header a {
   margin-right: 40px;
 }
 
-main {
-  display: -ms-grid;
-  display: grid;
-}
-
-main img {
+img {
   padding-top: 100px;
   padding-left: 100px;
 }
